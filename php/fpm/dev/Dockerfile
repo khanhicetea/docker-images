@@ -13,7 +13,8 @@ ENV PHPIZE_DEPS \
     freetype-dev \
     libpng-dev \
     libjpeg-turbo-dev \
-    zlib-dev
+    zlib-dev \
+    libzip-dev
 
 RUN true && \
   apk add --no-cache $PHPIZE_DEPS freetype libpng libjpeg-turbo && \
